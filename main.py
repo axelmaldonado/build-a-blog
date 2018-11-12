@@ -7,7 +7,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://build-a-blog:Maldonado@
 app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 
-
 class Blog(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
